@@ -79,21 +79,25 @@ def power(x, y):
     return x**y
 
 
+# return list of operations
 operations = ["+", "-", "/", "*", "**", "~"]
 for o in operations:
     print(o)
-
+# if operation is squreroot enter one value
 operation = input("Enter  operation type :")
 if operation == "~":
     number = float(input("Enter the number :"))
     print(square(number))
-
+# enter two number
 numbers = input("Enter the numbers :").split()
+# check if two number is ok
 try:
+    # converte int to float
     i, j = numbers
     x, y = float(i), float(j)
 except ValueError:
     print("error.. please enter 2 number")
+
 
 try:
     if operation == "+":
